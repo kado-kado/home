@@ -1,0 +1,90 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+	          <link rel="stylesheet" href="css.css">
+	<style>
+@import url('https://fonts.googleapis.com/css2? family= Libre+Barcode+39+Extended+Text & display=swap');
+		.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.clock {
+	line-height: 1.2;
+  text-align: center;
+}
+
+.clock-date {
+  font-size: 25px;
+}
+
+.clock-time {
+  font-size: 125px;
+}
+
+@media screen and (max-width: 250px) {
+  .clock-date {
+    font-size: 5vw;
+  }
+  .clock-time {
+    font-size: 20vw;
+  }
+}
+	</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+	    <body>
+       n<p>
+       n<p>
+       <nav class="nav">
+  <ul class="ul">
+         <li class="li"><img src="015.png">⠀⠀⠀⠀⠀</li>
+    <li class="li"><a class="a1" href="index.html">HOME</a></li>
+    <li class="li"><a class="a1" href="news.html">NEWS</a></li>
+    <li class="li"><a class="a1" href="search.html">Search</a></li>
+    <li class="li"><a class="a1" href="others.html">Others</a></li>
+  </ul>
+       </nav>
+  <div class="container">
+    <div class="clock">
+      <p class="clock-date"></p>
+      <p class="clock-time"></p>
+    </div>
+  </div>
+  <script>const clock = () => {
+  const d = new Date();
+
+  let year = d.getFullYear();
+  let month = d.getMonth() + 1;
+  let date = d.getDate();
+  let dayNum = d.getDay();
+  const weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  let day = weekday[dayNum];
+  let hour = d.getHours();
+  let min = d.getMinutes();
+  let sec = d.getSeconds();
+
+  month = month < 10 ? "0" + month : month;
+  date = date < 10 ? "0" + date : date;
+  hour = hour < 10 ? "0" + hour : hour;
+  min = min < 10 ? "0" + min : min;
+  sec = sec < 10 ? "0" + sec : sec;
+
+  let today = `${year}.${month}.${date} ${day}`;
+  let time = `${hour}:${min}:${sec}`;
+
+  document.querySelector(".clock-date").innerText = today;
+  document.querySelector(".clock-time").innerText = time;
+};
+
+setInterval(clock, 1000);</script>
+</body>
+</html>
