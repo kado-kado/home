@@ -3,7 +3,6 @@
 	src:url('mushin.ttf')  format('truetype'),
 }
 body {
-   font-family: 'Square Peg', cursive;
 font-family: 'Zen Maru Gothic', sans-serif;
    	font-family: "abc", cursive;
 }
@@ -13,7 +12,7 @@ font-family: 'Zen Maru Gothic', sans-serif;
   background-color: Black;
   padding-top: 5px;
   box-sizing: border-box;
-   font-family: 'Square Peg', cursive;
+
    background-image: url("006.png")
 }
 .ul {
@@ -84,7 +83,7 @@ span {
   text-decoration: none;
   color: black;
   margin-right: 35px;
-   font-family: 'Square Peg', cursive;
+
    font-family: 'Zen Maru Gothic', sans-serif;
      background-color: white;
 }
@@ -178,7 +177,7 @@ rt {
   background-color: Black;
   padding-top: 5px;
   box-sizing: border-box;
-   font-family: 'Square Peg', cursive;
+
    background-color:rgba(0,0,0,0);
 }
 .ul2 {
@@ -213,7 +212,7 @@ display: inline;
   background-color: Black;
   padding-top: 5px;
   box-sizing: border-box;
-   font-family: 'Square Peg', cursive;
+
       background-image: url("006.png")
 }
 .ul3 {
@@ -248,7 +247,7 @@ display: inline;
   background-color: Black;
   padding-top: 5px;
   box-sizing: border-box;
-   font-family: 'Square Peg', cursive;
+
    background-color:rgba(0,0,0,0);
 }
 .ul4 {
