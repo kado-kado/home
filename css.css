@@ -1,0 +1,339 @@
+@font-face {
+	font-family: "abc";
+	src:url('mushin.ttf')  format('truetype'),
+}
+body {
+   font-family: 'Square Peg', cursive;
+font-family: 'Zen Maru Gothic', sans-serif;
+   	font-family: "abc", cursive;
+}
+.nav {
+  width: 100%;
+  height: 70px;
+  background-color: Black;
+  padding-top: 5px;
+  box-sizing: border-box;
+   font-family: 'Square Peg', cursive;
+   background-image: url("006.png")
+}
+.ul {
+  display: flex;
+}
+.li {
+  list-style: none;
+}
+.a1{
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+.a{
+   display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+a {
+      text-decoration:none;
+}
+span {
+ color: black;  
+}
+#langChenge input[type="radio"]{
+  display    : none;
+}
+ 
+ /* === 各ラジオボタンのラベルをボタンに変更 == */
+#langChenge label{
+  display    : inline-block;
+  border     : 1px solid #ccc;
+  box-shadow : 2px 2px #999;
+  padding    : 2px 6px;
+}
+ 
+ /* === 選択されていない言語は非表示にする ==== */
+#langJa:not(:checked) ~ * *:lang(ja) {
+  display    : none;
+}
+#langEn:not(:checked) ~ * *:lang(en) {
+  display    : none;
+}
+#langZh:not(:checked) ~ * *:lang(zh) {
+  display    : none;
+}
+ 
+ /* === 選択されている言語のラベル色を変更 ==== */
+#langJa:checked ~ label[for="langJa"] {
+  background : #ffa64d;
+}
+#langEn:checked ~ label[for="langEn"] {
+  background : #ffa64d;
+}
+#langZh:checked ~ label[for="langZh"] {
+  background : #ffa64d;
+}
+.cs1 {
+   text-decoration:none;
+   display: block;
+  text-decoration: none;
+  color: black;
+  margin-right: 35px;
+   font-family: 'Square Peg', cursive;
+   font-family: 'Zen Maru Gothic', sans-serif;
+     background-color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.gotop{
+    display: block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #FFF;
+    border: 1px solid #999;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 85%;
+    text-decoration: none;
+    color: #333;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10000;
+}
+.gotop::before{
+    content: "";
+    display: block;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    width: 25%;
+    height: 25%;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.gotop:hover{
+    opacity: 1;
+}
+@media(max-width:750px){
+    .gotop{
+        width: 40px;
+        height: 40px;
+        text-indent: -9999px;
+        opacity: 1;
+        border: none;
+        background: none;
+        bottom: 10px;
+        right: 10px;
+    }
+    .gotop::before{
+        bottom: 0;
+    }
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #174a5c;
+   background-image: url("004.png")
+}
+.ul.footer-menu .li {
+display: inline;
+}
+.pp {
+   background-image: url("002.jpg")
+}
+.b3 {
+      background-image: url("003.png")
+}
+.a2 {
+   display: block;
+  text-decoration: none;
+  color: BLACK;
+  margin-right: 35px;
+}
+.b1 {
+   font-size: large;
+}
+.b2 {
+       text-align: center;
+}
+rt {
+  font-size: 0.7em;
+}
+.nav2 {
+  width: 100%;
+  height: 70px;
+  background-color: Black;
+  padding-top: 5px;
+  box-sizing: border-box;
+   font-family: 'Square Peg', cursive;
+   background-color:rgba(0,0,0,0);
+}
+.ul2 {
+  display: flex;
+}
+.li2 {
+  list-style: none;
+}
+.a12 {
+  display: block;
+  text-decoration: none;
+  color: White;
+  margin-right: 35px;
+}
+.a{
+   display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+.nav2 {
+  position: fixed;
+  top: 70;
+  left: 0;
+}
+.ul2.footer-menu .li2 {
+display: inline;
+}
+.nav3 {
+  width: 100%;
+  height: 140px;
+  background-color: Black;
+  padding-top: 5px;
+  box-sizing: border-box;
+   font-family: 'Square Peg', cursive;
+      background-image: url("006.png")
+}
+.ul3 {
+  display: flex;
+}
+.li3 {
+  list-style: none;
+}
+.a13 {
+  display: block;
+  text-decoration: none;
+  color: BLACK;
+  margin-right: 35px;
+}
+.a{
+   display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+.nav3 {
+  position: fixed;
+  top: 0px;
+  left: 0;
+}
+.ul3.footer-menu .li3 {
+display: inline;
+}
+.nav4 {
+  width: 100%;
+  height: 140px;
+  background-color: Black;
+  padding-top: 5px;
+  box-sizing: border-box;
+   font-family: 'Square Peg', cursive;
+   background-color:rgba(0,0,0,0);
+}
+.ul4 {
+  display: flex;
+}
+.li4 {
+  list-style: none;
+}
+.a14 {
+  display: block;
+  text-decoration: none;
+  color: White;
+  margin-right: 35px;
+}
+.a{
+   display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+.nav4 {
+  position: fixed;
+  top: 140;
+  left: 0;
+}
+.ul4.footer-menu .li4 {
+display: inline;
+}
+.container {
+  position: relative;
+  width:300px;
+}
+.cp_box *, .cp_box *:before, .cp_box *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cp_box {
+	position: relative;
+}
+.cp_box label {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	height: 140px; /* グラデーションの高さ */
+	cursor: pointer;
+	text-align: center;
+	/* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
+	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+}
+.cp_box input:checked + label {
+	background: inherit; /* 開いた時にグラデーションを消す */
+}
+.cp_box label:after {
+	line-height: 2.5rem;
+	position: absolute;
+	z-index: 2;
+	bottom: 20px;
+	left: 50%;
+	width: 16rem;
+	font-family: FontAwesome;
+	content: '\f13a''続きを見る';
+	transform: translate(-50%, 0);
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	border-radius: 20px;
+	background-color: rgba(27, 37, 56, 1);
+}
+.cp_box input {
+	display: none;
+}
+.cp_box .cp_container {
+	overflow: hidden;
+	height: 30px; /* 開く前に見えている部分の高さ */
+	transition: all 0.5s;
+}
+.cp_box input:checked + label {
+	/* display: none ; 閉じるボタンを消す場合解放 */
+}
+.cp_box input:checked + label:after {
+	font-family: FontAwesome;
+	content: '\f139''閉じる';
+}
+.cp_box input:checked ~ .cp_container {
+	height: auto;
+	padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
+	transition: all 0.5s;
+}
